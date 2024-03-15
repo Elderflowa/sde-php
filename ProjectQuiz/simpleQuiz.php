@@ -78,7 +78,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
     </style>
     <body>
         <?php
-        // put your code here
+        echo "testing testing"
         ?>
     </body>
 </html>
