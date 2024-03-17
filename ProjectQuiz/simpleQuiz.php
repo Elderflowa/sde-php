@@ -9,7 +9,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-	<title></title>
+	<title>QUIZ</title>
     </head>
     <style>
         body {
@@ -17,7 +17,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
             background-size:cover;
         }
        
-        #response {
+        #overskrift {
             font-weight:bolder;
             font-family: "Varela Round";
             top:8vh;
@@ -50,13 +50,20 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         }
     </style>
     <body>
-        <div>
-            <<h2 id="response">Preview of php/html/css code</h2>
-        </div> 
-        <div id="codepreview" style="height:200px;"> 
-            <script src="https://gist.github.com/Elderflowa/5f306d71fca129f2e484889d5d2a4594.js"></script>
-        </div>
-        <?php
+        <?php 
+        include "template.php";
         ?>
+        
+        <form action="/SchoolPHPRoot/ProjectQuiz/simpleResult.php" method="POST">
+            <h2 id="overskrift">Programmerings-quiz</h2>
+            <?php echo $sp1; ?> 
+            <ol id="spørgsmål"> 
+                <li><input type="radio" name="q1" value="a"/> <label><?php echo $sp1a; ?></label></li>
+                <li><input type="radio" name="q1" value="b"/> <label><?php echo $sp1b; ?></label></li>
+                <li><input type="radio" name="q1" value="c"/> <label><?php echo $sp1c; ?></label></li>
+                <li><input type="radio" name="q1" value="d"/> <label><?php echo $sp1d; ?></label></li>
+            </ol>
+            <input type="submit" value="Submit" name="submit">
+        </form>
     </body>
 </html>
