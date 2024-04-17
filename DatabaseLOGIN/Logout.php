@@ -11,7 +11,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
     <body>
         <?php
         session_start();
-        if(isset($_POST('logout'))){
+        if (isset($_POST['logout'])){
             session_destroy();
             header('location:login.php');
         }

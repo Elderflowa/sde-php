@@ -87,7 +87,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
         ?>
         <div id="layout">
             <?php echo "<div id='headline'><h3 id='text'>"."Velkommen ".$_SESSION["username"]."!"."</h3></div>"; ?>
-            <form action="logout.php" method="post">
+            <form action="logout.php" method="POST">
                 <input id="button" style="width:auto;height:30px;" type='submit' name='logout' value="Log ud">
             </form>
         </div>
