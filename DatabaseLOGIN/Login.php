@@ -121,10 +121,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
             else
                 {$_SESSION["antal"] = 1;}
 
-            //if (($_SESSION["antal"]) >= 5){
-                //session_destroy();
-              //  header("location:https://www.google.com/");
-            //}
+            if (($_SESSION["antal"]) >= 5){
+                session_destroy();
+                header("location:https://www.google.com/");
+            }
             
             echo "<div id='counter'><h3 id='text'>".$_SESSION["antal"]."</h3></div>";
             echo "<div id='headlinebox'><h3 id='headline'>"."FLORA<br>"."<h3 id='headline2'> Kundeportal</h3>"."</h3></div>"; 
