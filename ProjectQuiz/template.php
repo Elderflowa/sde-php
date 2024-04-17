@@ -13,7 +13,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
     </head>
     <style>
         body {
-            background: url(https://i.imgur.com/HqwiTvQ.png), #4ea37a;
+            background: url(https://i.imgur.com/SWcADuT.png), #4ea37a;
             background-size:cover;
         }
         
