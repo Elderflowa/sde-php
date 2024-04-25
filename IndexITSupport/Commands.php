@@ -45,9 +45,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
         
         #myInput {
             background-image: url('search.png'); /* Add a search icon to input */
-            background-position: 10px 12px; /* Position the search icon */
+            background-size: 16px 16px;
+            background-position: 10px 13px; /* Position the search icon */
             background-repeat: no-repeat; /* Do not repeat the icon image */
-            
             width: max(30%, 200px); /* Full-width */
             font-size: 16px; /* Increase font-size */
             padding: 12px 20px 12px 40px; /* Add some padding */
